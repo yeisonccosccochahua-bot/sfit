@@ -13,7 +13,7 @@
 git init
 git add .
 git commit -m "SFIT listo para deploy en Railway"
-git remote add origin https://github.com/TU_USUARIO/sfit.git
+git remote add origin https://github.com/yeisonccosccochahua-bot/sfit.git
 git push -u origin main
 ```
 

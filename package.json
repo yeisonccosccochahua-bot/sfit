@@ -1,0 +1,29 @@
+{
+  "name": "sfit-monorepo",
+  "version": "1.0.0",
+  "description": "Sistema de Fiscalización Inteligente de Transporte - Monorepo",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "shared"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:shared": "npm run build --workspace=shared",
+    "build": "npm run build:shared && npm run build:backend && npm run build:frontend",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "@types/multer": "^2.1.0"
+  }
+}

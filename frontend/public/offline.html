@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sin conexión — SFIT</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f9;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px 32px;
+      text-align: center;
+      max-width: 360px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    }
+    .icon {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #1B4F72;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .hint {
+      color: #aaa;
+      font-size: 13px;
+    }
+    button {
+      margin-top: 28px;
+      background: #1B4F72;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 14px 28px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:active { opacity: .85; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">📶</div>
+    <h1>Sin conexión</h1>
+    <p>Conéctate a internet para usar SFIT.</p>
+    <p class="hint">Revisa tu Wi-Fi o datos móviles e intenta de nuevo.</p>
+    <button onclick="window.location.reload()">Reintentar</button>
+  </div>
+</body>
+</html>
